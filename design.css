@@ -15,7 +15,6 @@ body {
     font-family: Arial, sans-serif;
     color: #FFFFFF;
 
-    /* Background picture */
     background-image: url("bg.png");
     background-size: cover;
     background-position: center;
@@ -28,7 +27,6 @@ body {
     max-width: 400px;
     padding: 30px 24px;
 
-    /* Navy blue gradient */
     background: linear-gradient(
         145deg,
         #10108f,
@@ -38,21 +36,17 @@ body {
     border-radius: 24px;
     text-align: center;
 
-    /* Subtle white outline */
     border: 1px solid rgba(255, 255, 255, 0.25);
 
-    /* Layered shadow */
     box-shadow:
         0 15px 35px rgba(0, 0, 0, 0.45),
         0 0 20px rgba(50, 100, 255, 0.25),
         inset 0 1px 0 rgba(255, 255, 255, 0.15);
 
-    /* Smooth hover animation */
     transition: transform 0.3s ease,
                 box-shadow 0.3s ease;
 }
 
-/* Make the card lift slightly when hovered */
 .card:hover {
     transform: translateY(-5px);
 
@@ -62,7 +56,6 @@ body {
         inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
-/* Circular profile picture */
 .profile-pic {
     width: 130px;
     height: 130px;
@@ -75,7 +68,6 @@ body {
     border: 3px solid #FFFFFF;
 }
 
-/* Name heading */
 h1 {
     font-size: 28px;
     margin-top: 0;
@@ -83,7 +75,6 @@ h1 {
     color: #FFFFFF;
 }
 
-/* Job title */
 .job-title {
     font-size: 18px;
     line-height: 1.5;
@@ -96,7 +87,6 @@ h1 {
     color: #FFFFFF;
 }
 
-/* Buttons container */
 .buttons {
     display: flex;
     flex-direction: column;
@@ -104,8 +94,6 @@ h1 {
     margin-top: 25px;
 }
 
-
-/* Button layout */
 .btn {
     display: flex;
     align-items: center;
@@ -124,7 +112,6 @@ h1 {
     transition: 0.3s;
 }
 
-/* Keep icons consistently aligned */
 .btn i {
     width: 24px;
     min-width: 24px;
@@ -132,22 +119,18 @@ h1 {
     text-align: center;
 }
 
-/* Facebook button */
 .facebook {
     background: #1877F2;
 }
 
-/* Instagram button */
 .instagram {
     background: #C13584;
 }
 
-/* Email button */
 .email {
     background: #333333;
 }
 
-/* Button hover effect */
 .btn:hover {
     filter: brightness(0.85);
     transform: translateY(-2px);

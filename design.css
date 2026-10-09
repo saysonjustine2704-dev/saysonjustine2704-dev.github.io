@@ -1,0 +1,170 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+
+    /* Background picture */
+    background-image: url("bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.card {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px 24px;
+
+    /* Navy blue gradient */
+    background: linear-gradient(
+        145deg,
+        #10108f,
+        #00004d
+    );
+
+    border-radius: 24px;
+    text-align: center;
+
+    /* Subtle white outline */
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    /* Layered shadow */
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.45),
+        0 0 20px rgba(50, 100, 255, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+    /* Smooth hover animation */
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Make the card lift slightly when hovered */
+.card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.5),
+        0 0 30px rgba(50, 100, 255, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Circular profile picture */
+.profile-pic {
+    width: 130px;
+    height: 130px;
+
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+
+    margin: 0 auto 20px;
+    border: 3px solid #FFFFFF;
+}
+
+/* Name heading */
+h1 {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+/* Job title */
+.job-title {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: -5px;
+    margin-bottom: 0;
+
+    position: relative;
+    top: -2px;
+
+    color: #FFFFFF;
+}
+
+/* Buttons container */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+
+/* Button layout */
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    width: 100%;
+    padding: 14px 25px;
+
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+/* Keep icons consistently aligned */
+.btn i {
+    width: 24px;
+    min-width: 24px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Facebook button */
+.facebook {
+    background: #1877F2;
+}
+
+/* Instagram button */
+.instagram {
+    background: #C13584;
+}
+
+/* Email button */
+.email {
+    background: #333333;
+}
+
+/* Button hover effect */
+.btn:hover {
+    filter: brightness(0.85);
+    transform: translateY(-2px);
+}
+
+/* Mobile phone layout */
+@media (max-width: 480px) {
+    body {
+        padding: 12px;
+        align-items: flex-start;
+    }
+
+    .card {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}

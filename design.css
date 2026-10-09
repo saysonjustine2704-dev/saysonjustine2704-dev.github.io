@@ -170,14 +170,26 @@ h1 {
     h1 {
         font-size: 24px;
     }
-}@media (max-width: 480px) {
+}
+
+
+@media (max-width: 480px) {
     body {
         padding: 12px;
-        align-items: flex-start;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+        background-attachment: scroll;
     }
 
     .card {
         padding: 25px 20px;
+        margin: 0;
+        transform: translateY(-20px);
+    }
+
+    .card:hover {
+        transform: translateY(-20px);
     }
 
     h1 {
